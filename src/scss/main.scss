@@ -2,3 +2,41 @@
 
 @import "_variables";
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
+
+body {
+    background-color: $bgc;
+}
+
+.about {
+    width: 280px;
+    margin: 50px auto;
+    padding: 15px;
+}
+
+.about__title {
+    border-bottom: solid 8px $mainred;
+    font-family: 'Bebas Neue';
+    font-size: 36px;
+    letter-spacing: .1em;
+    text-align: center;
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+}
+
+.about__content {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: .05em;
+}
+
+.about__button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: .2em;
+    padding: 5px 35px;
+    background-color: $bgc;
+    border: solid 3px $mainred;
+}
