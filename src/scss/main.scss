@@ -6,6 +6,7 @@
 
 body {
     background-color: $bgc;
+    box-sizing: border-box;
 }
 
 .header {
@@ -27,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 5px 5px -3px black;
 
 }
 
@@ -38,7 +40,7 @@ body {
 
 .about {
     width: 300px;
-    margin: 10px auto;
+    margin: 10px auto 30px auto;
     padding: 15px;
 }
 
@@ -56,7 +58,7 @@ body {
 .about__content {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: .05em;
     text-align: justify;
 }
@@ -90,6 +92,7 @@ body {
     width: 300px;
     height: 200px;
     position: relative;
+    margin: 20px auto;
 }
 
 
@@ -115,6 +118,7 @@ body {
 .statistic__dataContainer {
     width: 250px;
     background-color: $mainblue;
+    margin: 20px auto;
     padding: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
@@ -141,6 +145,7 @@ body {
 .statistic__dataContainerSecond {
     width: 250px;
     background-color: $mainred;
+    margin: 20px auto;
     padding: 25px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
@@ -165,12 +170,17 @@ body {
 }
 
 .features {
-    background-image: url('../assets/img/background-features-truck.jpg')
+    background-image: url('../assets/img/background-features-truck.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .features__container {
-    margin: 10px auto;
+    display: inline-block;
     width: 320px;
+    position: relative;
+    margin: 50px auto;
 }
 
 .features__container--boxOne {
@@ -178,7 +188,7 @@ body {
     width: 200px;
     background-color:$blueone;
     opacity: .9;
-
+    display: inline-block;
 }
 
 .features__container--boxTwo {
@@ -186,7 +196,7 @@ body {
     width: 200px;
     background-color:$bluetwo;
     opacity: .9;
-
+    display: inline-block;
 }
 
 .features__container--boxThree {
@@ -194,7 +204,7 @@ body {
     width: 200px;
     background-color:$bluethree;
     opacity: .9;
-
+    display: inline-block;
 }
 
 .features__container--boxFour {
@@ -202,25 +212,32 @@ body {
     width: 200px;
     background-color:$bluefour;
     opacity: .9;
+    display: inline-block;
 
 }
 
 .fContainer__box--circle {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     background-color: $greycircle;
     border-radius: 50%;
+    position: relative;
+    margin: 20px auto 0 auto;
     display: flex;
+  justify-content: center;
+  
+    
 }
 
 .fContainer__box--icon {
     height: 50px;
     width: 50px;
     position: absolute;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    left: 0;
+    right:0;
+    bottom: 0;
+    top: 0;
+    margin: auto auto;
 }
 
 .fContainer__box--title {
@@ -245,6 +262,7 @@ body {
     width: 300px;
     margin: 10px auto;
     padding: 15px;
+    margin: 20px auto;
 }
 
 .future__contentBox {}
@@ -276,18 +294,28 @@ body {
     text-align: justify;
 }
 
-.future__imageContainer {}
+.future__imageContainer {
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
 
 .future__imageContainer--box {
     width: 180px;
     height: 120px;
     background-color: $greybox;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .future__imageContainer--imageBox {
     width: 225px;
     height: 154px;
     border: solid 8px $white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
 }
 
@@ -299,6 +327,7 @@ body {
     width: 300px;
     margin: 10px auto;
     padding: 15px;
+    margin: 20px auto;
 }
 
 .contact__container--title {
@@ -310,6 +339,7 @@ body {
     text-align: left;
     display: block;
     width: 120px;
+    margin-bottom: 0;
 }
 
 .contact__container--content {
@@ -325,19 +355,19 @@ body {
 .contact__container--icon {
     width: 25px;
     height: 25px;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .contact__container--iconEnvelope {
     width: 25px;
     height: 20px;
-    margin-top: 0;
+    margin-top: 5px;
 }
 
 .contact__container--logo {
-    width: 320px;
-    height: 320px;
+    width: 120px;
+    height: 120px;
     display: block;
-    margin: 15px auto;
+    margin: 15px auto 50px;
 }
 
