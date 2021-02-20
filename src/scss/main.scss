@@ -4,9 +4,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap');
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 body {
     background-color: $bgc;
-    box-sizing: border-box;
 }
 
 .header {
@@ -174,19 +183,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-width: 320px;
+    max-width: 1440px;
+    margin: 10px auto;
+    box-shadow: 0 5px 5px -3px black;
 }
 
 .features__container {
-    display: inline-block;
     width: 320px;
-    position: relative;
-    margin: 50px auto;
+ margin: 50px auto;
+ 
 }
 
 .features__container--boxOne {
     height: 200px;
     width: 200px;
-    background-color:$blueone;
+    background-color: $blueone;
     opacity: .9;
     display: inline-block;
 }
@@ -194,7 +206,7 @@ body {
 .features__container--boxTwo {
     height: 200px;
     width: 200px;
-    background-color:$bluetwo;
+    background-color: $bluetwo;
     opacity: .9;
     display: inline-block;
 }
@@ -202,7 +214,7 @@ body {
 .features__container--boxThree {
     height: 200px;
     width: 200px;
-    background-color:$bluethree;
+    background-color: $bluethree;
     opacity: .9;
     display: inline-block;
 }
@@ -210,7 +222,7 @@ body {
 .features__container--boxFour {
     height: 200px;
     width: 200px;
-    background-color:$bluefour;
+    background-color: $bluefour;
     opacity: .9;
     display: inline-block;
 
@@ -224,9 +236,9 @@ body {
     position: relative;
     margin: 20px auto 0 auto;
     display: flex;
-  justify-content: center;
-  
-    
+    justify-content: center;
+
+
 }
 
 .fContainer__box--icon {
@@ -234,7 +246,7 @@ body {
     width: 50px;
     position: absolute;
     left: 0;
-    right:0;
+    right: 0;
     bottom: 0;
     top: 0;
     margin: auto auto;
@@ -281,7 +293,7 @@ body {
 .future__contentBox--text {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: .05em;
     text-align: justify;
 }
@@ -289,9 +301,27 @@ body {
 .future__contentBox--list {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    line-height: 32px;
+    line-height: 24px;
     letter-spacing: .05em;
     text-align: justify;
+    list-style: none;
+   // position: relative;
+
+}
+
+.future__contentBox--listItem {
+    position: relative;
+}
+
+.future__contentBox--listItem:before {
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url('../assets/img/arrow.svg');
 }
 
 .future__imageContainer {
@@ -370,4 +400,3 @@ body {
     display: block;
     margin: 15px auto 50px;
 }
-
